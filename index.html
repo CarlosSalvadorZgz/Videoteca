@@ -3,11 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Web</title>
+    <title>Formulario con Ícono</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .form-container {
+            max-width: 400px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+        }
+        .form-container input[type="text"] {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-container button {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .form-container button i {
+            margin-right: 5px;
+        }
+    </style>
 </head>
 <body>
-    <h1>¡Hola, mundo!</h1>
-    <p>Esta es una página web simple.</p>
-    <a href = 'https://youtu.be/mg_VYnyW5rU'>pulsa aquí</a>
+  <h1>BUSCAR VÍDEO</h1>
+    <div class="form-container">
+        <form>
+            <input type="text" placeholder="Introduce tags..." required>
+            <button type="submit">
+                <i class="fas fa-search"></i>
+                Enviar
+            </button>
+        </form>
+    </div>
+    <div>
+      <!-aquí comienza un script que busca en un fichero json los vídeos con los tags indicados>
+      <p>Esto es una prueba</p>
+      <p>Segunda línea</p>
+      <p>Tercer línea</p>
+      <p>Última línea</p>
+    </div>
+
 </body>
 </html>
